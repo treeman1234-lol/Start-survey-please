@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start Survey Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Start Survey</h1>
+  <div id="question-container">
+    <p id="question">Welcome to the survey! Click start to begin.</p>
+    <button id="start-btn" onclick="startSurvey()">Start</button>
+  </div>
+  <div id="answer-container" style="display: none;">
+    <button onclick="answer('Yes')">Yes</button>
+    <button onclick="answer('No')">No</button>
+  </div>
+</div>
+<audio id="background-sound" src="ominous.mp3" autoplay loop></audio>
+<script src="script.js"></script>
+</body>
+</html>
